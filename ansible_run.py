@@ -24,4 +24,4 @@ def ansible_runner(request):
   # 获取结果，是一个字典格式，如果是print可以用json模块美化一下
   return HttpResponse(json.dumps(api.get_result(),indent=4))
 
-# curl -d "ip=172.16.3.195&username=root&password=@381af846c3eb6ec&command=hostname&port=77" "http://172.16.5.14//ansible_api/"
+# curl -d "ip=172.16.3.195&username=root&password=@381af846c3eb6ec&command=hostname&port=77" "http://172.0.0.1//ansible_api/"
